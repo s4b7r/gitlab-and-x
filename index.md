@@ -1,35 +1,53 @@
 ---
-title: Home
+title: GitLab and [x]
 layout: home
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+The `x` in the title is not to be confused with `X`, which previously was named Twitter. It is `x` as in placeholder.
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+This is a living document and ideally a collaborative one: 
 
-More specifically, the created site:
+- (I will add some more info on how to collaborate on this doc soon.)
+- Have something to add about tool x's interaction with GitLab? Go on and add it.
+- Have suggestions or corrections? Open an issue or a pull request.
+- Does something bother you about using GitLab, like "ahh, it is not usefull for x!"? Open an issue and describe what is bothering you.
+- Need help with GitLab
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+## Why `GitLab and x`?
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+...
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+## GitLab and HackMD
 
-To get started with creating a site, simply:
+- HackMD for live-synced collaboration, if *live* sync is what is specifically necessary.
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+## GitLab and NextCloud
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+- NextCloud files as link in GitLab: you risk that someone breaks the link when moving some file inside NextCloud.
+- Put files into GitLab (probably best into a repository, maybe) and they are always linked to their "topic".
+  - What about sharing files then?
+    - Is the one you want to share with internal to your organization? Use GitLab!
+    - Are they outside your organization? But do they have access to *that* specific GitLab project / repository? If not, but you want to collaborate, maybe they should have access to it?! Use GitLab!
+    - They have absolutely no access and should not have it? Then ... (I have to think about this one, but it probably depends on what you want to achieve. Because if you internally still need to collaborate on that file or project, it still should live within GitLab. Once you let someone collaborate on that in another place, collaborating gets harder and slows you down, e.g. by merge conflicts, loosing track of changes, etc.)
 
-----
+## GitLab and Mail
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+- Some mails are actually good to keep and answer(!) in GitLab issues.
+- (When, why, and how I still have to flesh out. Do you have an idea?)
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+## GitLab and MS Teams
+
+- You use Teams direct messages, channels, etc. as storage or archive like "I post this here so we/I don't forget"? Use GitLab!
+
+## GitLab
+
+- Don't have editable text as updateable information, e.g. don't use the edit function of issue description (that is what is the top most part on an issue page) to use that text as an updateable info side. That is what wiki pages are made for. Edit is only for error corrections shortly after the time of original posting something.
+- If a post is long a ago and you see an error: write the erratum e.g. in an issue comment and then do that fix in the editable text. Maybe also note there that you corrected something.
+  - Exception: repositories and wikis. They are thought for this. Issues and discussions are not.
+
+### Advantages / Benefits
+
+- Issue templates for reoccuring things, e.g. newsletter organization, event organization.
+  - Everything like "next time we should..." => adapt the issue template
+  - Everything like "we do it like this step, than that step, than ... each time" => create an issue template
+- Everythig is easily cross-referenceable
