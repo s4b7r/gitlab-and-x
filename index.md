@@ -3,6 +3,8 @@ title: GitLab and [x]
 layout: home
 ---
 
+# GitLab and Git for Project Management, Collaboration besides Code, and combined with [YOUR TOOL]
+
 The `x` in the title is not to be confused with `X`, which previously was named Twitter. It is `x` as in placeholder.
 
 This is a living document and ideally a collaborative one: 
