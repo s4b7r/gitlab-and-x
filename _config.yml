@@ -1,3 +1,9 @@
+# The original template file from https://github.com/just-the-docs/just-the-docs-template is distributed under MIT license.
+# Find it in the first commit of this repository.
+
+# All content other than from the template is licensed under CC BY-SA 4.0, see the repository LICENSE file.
+
+
 title: GitLab and [x]
 description:  GitLab and Git for Project Management, Collaboration besides Code, and combined with [YOUR TOOL] 
 theme: just-the-docs
